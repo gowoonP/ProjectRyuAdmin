@@ -737,8 +737,14 @@
 		<div id="menubar" class="animate">
 			<div class="nano has-scrollbar" style="height: 719px;"><div class="nano-content" tabindex="0" style="right: -15px;"><div class="menubar-scroll-panel" style="padding-bottom: 50px;">
 				<div class="tabled full-width">
-					
-						
+					<a href="javascript:" class="holder global_icon_menu dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+						<div style="position: absolute; left: 22px; top: 0; line-height: 36px;">
+							<img src="/common/img/flag_shapes/flag_kr_circle.png" width="20" height="20">
+						</div>
+						<div class="brand-holder">
+							<span class="title_controls">shopp</span>
+						</div>
+					</a>
 					<ul class="dropdown-menu global_setting animation-dock menu-card-styling">					<li class="holder ">
 								<a href="/admin/?type=page&amp;_ga=2.254642240.996359343.1645365816-1966519718.1645110617">
 									<div class="tabled">
@@ -746,7 +752,9 @@
 											<img width="30" height="30" src="/common/img/flag_shapes/flag_kr_circle.png">
 										</div>
 										<div class="table-cell vertical-middle domain">
-											
+											<div class="inline-blocked">
+												<span class="domain_name">shopp</span>
+											</div>
 											<span data-original-title="일반 방문자의 접속이 제한됩니다. 글로벌 버전으로 업그레이드 해주세요" data-toggle="tooltip" class="badge" data-placement="top" style="margin-left: 5px; vertical-align: top;">미결제</span>
 																					<div class="text-gray-bright text-12">hyunwoo1001.imweb.me</div>
 																			</div>
@@ -756,25 +764,26 @@
 															</div>
 							</li>
 							<li class="border-top"><a href="javascript:;" onclick="SITE_MANAGE.openAddUnit('S20220127201b2696461e8')" class="text-primary" style="padding-top: 15px;"></a></li></ul>		</div>
-				<ul id="main-menu" class="gui-controls"><li class="  " data-title="preview"><a href="https://www.duoback.co.kr/duobacke" target="_blank"><div class="gui-icon"><i class="db-preview"></i></div><span class="title title_controls">사이트 바로가기</span></a></li><li class="spacer"></li><li class=" " data-title="dashboard"><a href="/adminpage/dashboard.html" class="sidebar-nav-menu">
+				<ul id="main-menu" class="gui-controls"><li class="  " data-title="design_mode"><a href="/admin/design"><div class="gui-icon"><i class="db-wand"></i></div><span class="title title_controls">디자인모드</span></a></li><li class="  " data-title="preview"><a href="//hyunwoo1001.imweb.me" target="_blank"><div class="gui-icon"><i class="db-preview"></i></div><span class="title title_controls">사이트 바로가기</span></a></li><li class="spacer"></li><li class="top-menu"><a href="javascript:;" onclick="DASHBOARD.openSiteManagementDialog(this);"><span>사이트 관리</span><i class="btm bt-plus-circle"></i></a></li><li class="active expanded expanding" data-title="dashboard"><a href="/adminpage/dashboard.html" class=" active">
+
 					<div class="gui-icon"><i class="db-dashboard"></i></div>
 					<span class="title title_controls">대시보드</span></a></li>
-					<li class="gui-folder" data-title="member"><a href="/admin/member" class="sidebar-nav-menu" onclick="return false;">
+					<li class="gui-folder expanded" data-title="member"><a href="/admin/member" class="sidebar-nav-menu" onclick="return false;">
 
-					<div class="gui-icon expanded"><i class="db-user"></i></div>
+					<div class="gui-icon"><i class="db-user"></i></div>
 					<span class="title title_controls">사용자 관리</span></a>
 					<ul>
 						<li class="  " data-title="member_list"><a href="/adminpage/memberList.html"><span class="title title_controls">사용자 목록</span></a></li><li class="  " data-title="member_mail"><a href="/adminpage/memberMail.html"><span class="title title_controls">메일 발송 설정</span></a></li>
 					</ul>
 				</li>
-					<li class="gui-folder expanded" data-title="shopping"><a href="/admin/shopping" class="sidebar-nav-menu" onclick="return false;">
+					<li class="gui-folder" data-title="shopping"><a href="/admin/shopping" class="sidebar-nav-menu" onclick="return false;">
 
 						<div class="gui-icon"><i class="db-shopping-bag"></i></div>
 						<span class="title title_controls">쇼핑 관리</span></a>
 						<ul>
 							<li class="  " data-title="shopping_product"><a href="#">
 							<span class="title title_controls">상품관리</span></a></li>
-							<li class="  " data-title="shopping_order"><a href="/adminpage/shoppingOrder.html" class="active"><span class="title title_controls">주문관리</span></a></li>
+							<li class="  " data-title="shopping_order"><a href="/adminpage/shoppingOrder.html"><span class="title title_controls">주문관리</span></a></li>
 							<li class="  " data-title="shopping_cancel"><a href="/adminpage/shoppingCancel.html"><span class="title title_controls">취소관리</span></a></li>
 							<li class="  " data-title="shopping_return"><a href="/adminpage/shoppingReturn.html"><span class="title title_controls">반품관리</span></a></li>
 							<li class="  " data-title="shopping_exchange"><a href="/adminpage/shoppingExchange.html"><span class="title title_controls">교환관리</span></a></li>
@@ -792,16 +801,35 @@
 						</ul>
 						
 				</ul>
-				
+				<div class="height-1"></div>
+				<div class="menubar-foot-panel">
+					<div class="full-height">
+										<a href="javascript:" class="dropdown-toggle block _lang_button" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
+							<i class="icon-globe"></i>
+							<span class="panel-text">한국어</span>
+						</a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="javascript:;" onclick="ADMIN.changeAdminLang('KR')">한국어</a></li><li><a href="javascript:;" onclick="ADMIN.changeAdminLang('EN')">English (Beta)</a></li><li><a href="javascript:;" onclick="ADMIN.changeAdminLang('zh-TW')">中文 (繁體)</a></li>				</ul>
+					</div>
+				</div>
 			</div></div><div class="nano-pane"><div class="nano-slider" style="height: 516px; top: 46.2052px;"></div></div></div>
 		</div>
 
 		<div class="fold_area tabled animate" style="padding-left: 24px;">
 			<div class="table-cell vertical-middle" style="padding-right: 45px;">
-				<a href="#" class="logo_icon_menu">
+				<a href="/admin/" class="logo_icon_menu">
 					<img src="./common/img/duobackLogo.png"></a>
 			</div>
-			
+			<a class="_tooltip_btn side_bar_btn" href="javascript:" role="button" id="toggle_button">
+				<span class="fold_button left" data-original-title="사이드바 접어두기" data-toggle="tooltip" data-placement="bottom">
+					<i class="icons fa fa-chevron-left" style="opacity: 0.6"></i>
+					<i class="icons fa fa-chevron-left"></i>
+				</span>
+				<span class="fold_button right" data-original-title="사이드바 펼쳐두기" data-toggle="tooltip" data-placement="bottom">
+					<i class="icons fa fa-chevron-right"></i>
+					<i class="icons fa fa-chevron-right" style="opacity: 0.6"></i>
+				</span>
+			</a>
 		</div>
 
 		<script>
