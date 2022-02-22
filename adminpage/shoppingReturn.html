@@ -577,17 +577,7 @@ $(window).on("keyup", function(e){
 				</ul>
 				
 		</ul>
-		<div class="height-1"></div>
-		<div class="menubar-foot-panel">
-			<div class="full-height">
-								<a href="javascript:" class="dropdown-toggle block _lang_button" data-toggle="dropdown" tabindex="-1" aria-expanded="false">
-					<i class="icon-globe"></i>
-					<span class="panel-text">한국어</span>
-				</a>
-				<ul class="dropdown-menu pull-right">
-					<li><a href="javascript:;" onclick="ADMIN.changeAdminLang('KR')">한국어</a></li><li><a href="javascript:;" onclick="ADMIN.changeAdminLang('EN')">English (Beta)</a></li><li><a href="javascript:;" onclick="ADMIN.changeAdminLang('zh-TW')">中文 (繁體)</a></li>				</ul>
-			</div>
-		</div>
+	
 	</div></div><div class="nano-pane"><div class="nano-slider" style="height: 516px; top: 46.2052px;"></div></div></div>
 </div>
 
@@ -596,16 +586,7 @@ $(window).on("keyup", function(e){
 		<a href="#" class="logo_icon_menu">
 			<img src="./common/img/duobackLogo.png"></a>
 	</div>
-	<a class="_tooltip_btn side_bar_btn" href="javascript:" role="button" id="toggle_button">
-		<span class="fold_button left" data-original-title="사이드바 접어두기" data-toggle="tooltip" data-placement="bottom">
-			<i class="icons fa fa-chevron-left" style="opacity: 0.6"></i>
-			<i class="icons fa fa-chevron-left"></i>
-		</span>
-		<span class="fold_button right" data-original-title="사이드바 펼쳐두기" data-toggle="tooltip" data-placement="bottom">
-			<i class="icons fa fa-chevron-right"></i>
-			<i class="icons fa fa-chevron-right" style="opacity: 0.6"></i>
-		</span>
-	</a>
+	
 </div>
 
 <script>
@@ -648,39 +629,13 @@ $.ajax({
 </script>
 </div> <!-- END BASE -->
 <div style="position: absolute; width: 1px; height: 1px; left: -10000px;" data-ip="1.231.143.137" data-ip2="" data-ip3="1.231.143.137, 130.176.125.114"><input id="dummy_input" type="text"></div>
-<div id="cocoaModal" role="dialog" data-backdrop="true" data-keyboard="true" style="display: none;" class="modal in modal_admin_order_advanced_search">
+<div id="cocoaModal1" role="dialog" data-backdrop="true" data-keyboard="true" style="display: none;" class="modal in modal_admin_order_advanced_search">
 
 
 
 	<div class="modal-dialog ui-draggable">
 		<div class="modal-content">	
-	
-	
 
-	
-
-	
-
-	
-
-	
-
-	
-	
-	
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
 <div id="dashboard_loader_sub" class="se-pre-con" style="display: none;">
 	<div class="page-loader-spinner">
 		<div class="double-bounce1"></div>
@@ -851,38 +806,11 @@ $.ajax({
 	});
 </script></div>
 	</div>
+	</div>
 
+	<div id="cocoaModal" role="dialog" data-backdrop="true" data-keyboard="true" style="display: none;" class="modal in modal_admin_order_advanced_search">
 	<div class="modal-dialog ui-draggable">
 		<div class="modal-content">	
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-
-
 	
 <div class="modal-header">
 	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="btl bt-times"></i></button>
@@ -1016,23 +944,11 @@ $.ajax({
 	<button type="button" class="btn btn-default btn-flat" data-dismiss="modal">닫기</button>
 </div></div>
 	</div>
+</div>
 
-
-
+<div id="cocoaModal" role="dialog" data-backdrop="true" data-keyboard="true" style="display: none;" class="modal in modal_admin_order_advanced_search">
 	<div class="modal-dialog ui-draggable">
 		<div class="modal-content">	
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 	
 	<style>
 		.modal_admin_order_advanced_search .modal-dialog {
@@ -1269,17 +1185,12 @@ $.ajax({
 <script>
 </script><div style="position: absolute; width: 1px; height: 1px; left: -10000px;" data-ip="123.109.60.221" data-ip2="" data-ip3="123.109.60.221, 130.176.125.75"><input id="dummy_input" type="text"></div>
 
-<div class="modal" id="cocoaModal" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content"></div>
-</div>
-</div>
-
 <div class="modal submodal" role="dialog" id="cocoaSubModal" style="z-index: 17001">
 <div class="modal-dialog">
 <div class="modal-content"></div>
 </div>
 </div>
+
 
 <script>
 	$(".btn-out").click(function(){
@@ -1343,7 +1254,7 @@ FutureTime += ':' + Now.getMinutes();
 let str = "<tr><input type='hidden' name='excel_status' class='excel_status' value='download'><th>교환요청</th><th>기본 주문 내보내기/th><th>"+NowTime+"</th><th>"+FutureTime+"</th><th class='text-right' style='padding-right: 20px;'><a href='/admin/ajax/member/download_excel_member_list.cm?idx=1146723' class=' text-primary make_complete '>다운로드</a></th><th class='text-right' style='padding-right: 20px;'><span class='text-danger' style='cursor: pointer;' onclick='MEMBER_EXCEL.deleteMemberExcel('1146723');'>삭제</span></th></tr>"
 
 	$(".btn-help").click(function(){
-			$(".high").css("display","inline-block");
+			$(".help").css("display","inline-block");
 			$(".high").css("display","none");
 			$(".out").css("display","none");
 			$("#cocoaModal").removeClass("modal_admin_order_excel_download");	
